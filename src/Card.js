@@ -4,7 +4,9 @@ import Card from 'react-bootstrap/Card';
 function CardItem(props) {
 
   return (
-    <Card style={{
+    <Card 
+    border="secondary"
+    style={{
       alignItems:"center",
       width: '48rem' ,
       backgroundColor: 'white',
@@ -17,7 +19,8 @@ function CardItem(props) {
       <Card.Body>
         <Card.Title>{props.title}</Card.Title>
         <Card.Text
-        style={{ textAlign:"left", padding:"4em",textDecoration:"", color:"black" }}
+        style={{ textAlign:"left", padding:"4em", }}
+        className='text-muted'
         >
         {props.description }
         </Card.Text>
